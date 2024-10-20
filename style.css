@@ -1,0 +1,192 @@
+/* Resetting default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(#80deea); /* Soft gradient background */
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    background: #00796b; /* Dark teal background */
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 20px 20px; /* Rounded bottom corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 2rem; /* Larger font size */
+}
+
+nav button {
+    background-color: #ffffff; /* White buttons */
+    color: #00796b; /* Dark teal text */
+    border: 2px solid #ffffff; /* White border */
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: bold; /* Bold text */
+}
+
+nav button:hover {
+    background-color: #004d40; /* Darker teal on hover */
+    color: white; /* White text on hover */
+}
+
+/* Main Content */
+#content {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    color: #004d40; /* Darker teal for headings */
+    font-size: 2.5rem; /* Larger heading */
+    margin-bottom: 30px;
+}
+
+/* Form Styles */
+form {
+    background-color: #ffffff; /* White background for forms */
+    padding: 30px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    margin-bottom: 30px;
+    display: flex; /* Flexbox for vertical alignment */
+    flex-direction: column; /* Stack elements vertically */
+}
+
+form input,
+form select {
+    margin: 10px 0; /* Uniform spacing */
+    padding: 15px; /* Increased padding */
+    border-radius: 10px; /* Rounded corners */
+    border: 1px solid #b2dfdb; /* Light teal border */
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #00796b; /* Dark teal border on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 8px rgba(0, 121, 107, 0.5); /* Glow effect */
+}
+
+/* Buttons */
+form button {
+    background-color: #00796b; /* Dark teal buttons */
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 10px; /* Slightly larger radius */
+    font-size: 1.1rem; /* Slightly larger font size */
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: bold; /* Bold text */
+}
+
+
+
+form button:hover {
+    background-color: #004d40; /* Darker teal on hover */
+    transform: translateY(-3px); /* Slight lift effect */
+}
+
+.back-button {
+    background-color: #e57373; /* Red for back button */
+}
+
+.back-button:hover {
+    background-color: #c62828; /* Darker red on hover */
+}
+
+/* Links */
+a {
+    color: #00796b;
+    text-decoration: none;
+    margin-top: 15px;
+    text-align: center;
+    display: inline-block; /* Centered block */
+    font-weight: bold; /* Bold link */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* List Styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 15px;
+    background: #e0f2f1; /* Light teal for list items */
+    margin: 10px 0; /* Slightly larger margin */
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+ul li:hover {
+    background: #b2dfdb; /* Darker teal on hover */
+}
+
+ul li button {
+    background-color: #f44336; /* Red for delete button */
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+ul li button:hover {
+    background-color: #c62828; /* Darker red on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav button {
+        margin: 5px 0;
+        width: 100%;
+    }
+
+    form {
+        width: 90%;
+        margin: auto;
+    }
+
+    h2 {
+        font-size: 1.8rem; /* Smaller heading */
+    }
+}
+
+@media (min-width: 600px) {
+    form {
+        width: 80%;
+        margin: auto;
+    }
+}
+
